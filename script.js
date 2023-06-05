@@ -5,7 +5,7 @@ let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 let userInp = document.getElementById("user-inp").value;
 
-fetch(url + userInp)
+fetch(url)
   .then((response) => response.json())
   .then((data) => {
     let myMeal = data.meals[0];
