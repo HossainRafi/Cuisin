@@ -10,7 +10,7 @@ body {
 .container {
   background-color: #ffffff;
   font-size: 16px;
-  padding: 3em 2.8em;
+  padding: 2em 2em 3em 2em;
   width: 90vw;
   max-width: 32em;
   position: absolute;
@@ -20,7 +20,7 @@ body {
   border-radius: 0.6em;
 }
 .search-container {
-  width: 100%;
+  width: 95%;
   display: grid;
   grid-template-columns: 9fr 3fr;
   gap: 1.2em;
