@@ -25,3 +25,17 @@ body {
   grid-template-columns: 9fr 3fr;
   gap: 1.2em;
 }
+.search-container input {
+  font-size: 1em;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #202030;
+}
+.search-container button {
+  font-size: 1em;
+  background-color: #f4c531;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.3em;
+}
