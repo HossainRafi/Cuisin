@@ -7,18 +7,17 @@ let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 searchBtn.addEventListener("click", () => {
   let userInp = document.getElementById("user-inp").value;
   if (userInp.length == 0) {
-    result.innerHTML = `<h3>Input Field Cannot Be Empty</h3>`;
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Please Enter A Food Name!",
+    });
   } else {
     // Fetch data ==========================================
     fetch(url + userInp)
       .then((response) => response.json())
       .then((data) => {
         let myMeal = data.meals[0];
-        console.log(myMeal);
-        console.log(myMeal.strMealThumb);
-        console.log(myMeal.strMeal);
-        console.log(myMeal.strArea);
-        console.log(myMeal.strInstructions);
 
         //   Get ingredients ==================================
         let count = 1;
@@ -33,7 +32,6 @@ searchBtn.addEventListener("click", () => {
             ingredients.push(`${measure} ${ingredient}`);
           }
         }
-        console.log(ingredients);
 
         //   Show recipe in UI ================================
         result.innerHTML = `
@@ -75,7 +73,11 @@ searchBtn.addEventListener("click", () => {
         });
       })
       .catch(() => {
-        result.innerHTML = `<h3>Invalid Input</h3>`;
+        Swal.fire({
+          icon: "error",
+          title: "No search result",
+          text: "Please Try Other Food!",
+        });
       });
   }
 });
