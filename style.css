@@ -38,17 +38,18 @@ body {
   border: none;
   font-weight: 600;
   border-radius: 0.3em;
+  cursor: pointer;
 }
 img {
   display: block;
   width: 50%;
-  margin: 1.8em auto 0 auto;
-  border: 0.2em solid #f4c531;
+  margin: 1em auto 0 auto;
+  border: 3px solid #f4c531;
 }
 .details {
   background-color: #f4c531;
   position: relative;
-  margin: 1.7em 0 0 0;
+  margin: .7em 0 0 0;
   text-align: center;
   padding: 0.6em 0;
 }
@@ -63,7 +64,7 @@ img {
 #show-recipe {
   font-size: 1em;
   position: relative;
-  left: 75%;
+  left: 40%;
   padding: 0.9em 0.6em;
   background-color: #f4c531;
   border: none;
@@ -100,6 +101,7 @@ img {
   top: 1.2em;
   left: 90%;
   border-radius: 0.3em;
+  cursor: pointer;
 }
 ul {
   font-size: 1em;
