@@ -59,4 +59,14 @@ fetch(url)
       parent.appendChild(child);
       ingredientCon.appendChild(parent);
     });
+
+    //   Show details ===================================
+    showRecipe.addEventListener("click", () => {
+      recipe.style.display = "block";
+    });
+      
+    //   Hide details ====================================
+    hideRecipe.addEventListener("click", () => {
+      recipe.style.display = "none";
+    });
   });
