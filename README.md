@@ -1,6 +1,6 @@
-## Project Name: [Cuisin](https://cuisinjs.netlify.app/)
+## Project Name: [Cuisin](https://jscuisin.netlify.app)
 
-## Project Live Link: [Cuisin](https://cuisinjs.netlify.app/)
+## Project Live Link: [Cuisin](https://jscuisin.netlify.app)
 
 ## This is a JavaScript "Food Recipe" application build with HTML, CSS, JavaSceipt & API
 
