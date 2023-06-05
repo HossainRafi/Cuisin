@@ -41,6 +41,22 @@ body {
 }
 img {
   display: block;
-  width: 50%;
+  width: 70%;
   margin: 1.8em auto 0 auto;
+  border: .2em solid #f4c531;
+}
+.details {
+  background-color: #f4c531;
+  position: relative;
+  margin: 1.7em 0 0 0;
+  text-align: center;
+  padding: 0.6em 0;
+}
+.details h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.details h4 {
+  font-size: 1em;
+  font-weight: 400;
 }
