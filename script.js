@@ -1,10 +1,11 @@
-//Initial References
+//Initial References ====================================
 let result = document.getElementById("result");
 let searchBtn = document.getElementById("search-btn");
 let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 let userInp = document.getElementById("user-inp").value;
 
+// Fetch data ==========================================
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
@@ -15,6 +16,7 @@ fetch(url)
     console.log(myMeal.strArea);
     console.log(myMeal.strInstructions);
 
+    //   Get ingredients ==================================
     let count = 1;
     let ingredients = [];
     for (let i in myMeal) {
@@ -28,4 +30,21 @@ fetch(url)
       }
     }
     console.log(ingredients);
+
+    //   Show recipe in UI ========================
+    result.innerHTML = `
+    <img src=${myMeal.strMealThumb}>
+    <div class="details">
+        <h2>${myMeal.strMeal}</h2>
+        <h4>${myMeal.strArea}</h4>
+    </div>
+    <div id="ingredient-con"></div>
+    <div id="recipe">
+        <button id="hide-recipe">X</button>
+        <pre id="instructions">${myMeal.strInstructions}</pre>
+    </div>
+    <button id="show-recipe">View Recipe</button>
+    `;
+      
+      
   });
