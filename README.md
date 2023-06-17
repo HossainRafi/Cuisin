@@ -1,4 +1,4 @@
-## Project Title: [Cuisin](https://jscuisin.netlify.app)
+## Project Title: [Cuisine](https://jscuisin.netlify.app)
 
 ## Tech Stack:
 - HTML
